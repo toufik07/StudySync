@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #6366F1;
+    --accent-color: #3f83f8;
+    --text-color: #333333;
+    --link-color: #2563eb;
+    --background-color: #ffffff;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.header {
+    width: 100%;
+}
+
+.header-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.logo-img {
+    width: 2rem;
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color)
+}
+
+.nav-link {
+    color: var(--gray);
+    font-weight: bold;
+}
+
+.header-menu {
+    display: none;
+}
+
+.hamburger-btn{
+    display: flex;
+    border: none;
+    background-color: var(--background-color);
+    margin-right: 1rem;
+}
+.hamburger-img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.contact-button {
+    background-color: var(--primary-color);
+    padding: 0.8rem;
+    max-width: 120px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    display: none;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-left{
+    padding: 1rem;
+}
+.con-label{
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+.main-text{
+    font-size: 2.3rem;
+    color: var(--text-color);
+    padding: 0.6rem;
+}
+.para-text{
+    padding: 0.8rem;
+    color:#333333;
+}
+.buttongroup{
+    padding: 0.5rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.startbtn,.tourbtn{
+    background-color: var(--primary-color);
+    padding: 0.8rem;
+    max-width: 120px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+}
+.tourbtn{
+    background-color: var(--dark-gray);
+}
+.content-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.main-img{
+    overflow: hidden;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 6px black;
+}
+.mainimg{
+    width: 100%;
+    height: 100%;
+}
+
+.trust-company{
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 2rem;
+    animation: lettoright 5s ;
+}
+.trust-title{
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+.company{
+    max-width: 400px;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    background-color: var(--light-gray);
+    margin: 0 auto;
+    display: grid;
+    color: var(--text-color);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+}
+.trust-item{
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+.trust-img{
+    width: 18%;
+}
+
+@media screen and (min-width:768px) {
+    .contact-button {
+        display: flex;
+        justify-content: center;
+    }
+    .header-menu {
+        display: flex;
+        gap: 1.2rem;
+        font-size: 1.2rem;
+    }
+    .hamburger-btn{
+        display: none;
+    }
+    .container{
+        display: flex;
+        padding: 2rem;
+    }
+    .content-left{
+        width: 43vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        text-align: left;
+    }
+    .para-text{
+        padding-left: 0;
+    }
+    .con-label{
+        padding-left:0;
+    }
+    .main-text{
+        padding-left: 0;
+        font-size: 3.9rem;
+    }
+    .buttongroup{
+        padding-left: 0;
+    }
+    
+    .main-img{
+        width: 65vh;
+        height: 63vh;
+    }
+    .company{
+        max-width: 668px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: none;
+    }
+}
+
+.comp-advantages{
+    text-align: center;
+    background-color: var(--light-gray);
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+.advantages{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.ad-title{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+.ad-para{
+    color: var(--text-color);
+    padding-bottom: 1rem;
+}
+.adva-1, .adva-2,.adva-3,.adva-4,.adva-5,.adva-6{
+    text-align: center;
+    background-color: var(--accent-color);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.adva-2{
+    background-color: #FF6289;
+}
+.adva-3{
+    background-color: #fcbf58;
+}
+.adva-4{
+    background-color: #44bfc3;
+}
+.adva-5{
+    background-color: #77b05d;
+}
+.adva-6{
+    background-color: #7d78b1;
+}
+.adva-img{
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rem;
+}
+.item-img{
+    width: 50%;
+    height: 50%;
+}
+.item-title{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.adva-cards{
+    display: grid;
+    gap: 2rem;
+}
+
+@media screen and (min-width:800px) {
+   .advantages{
+    margin: 0 auto;
+    max-width: 768px;
+   }
+   .adva-cards{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+   }
+}
+
+.about{
+    text-align: center;
+}
+.about-title{
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+    padding: 2rem;
+}
+.aboutitem{
+    border: 1px solid;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    color: var(--text-color);
+}
+.profileimg{
+    width: 80px;
+    height: 80px;
+}
+.profimg{
+    width: 100%;
+    height: 100%;
+}
+.aboutlabel{
+    font-size: 0.89rem;
+}
+.aboutname{
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.aboutitem:hover{
+    margin: -0.5rem;
+    box-shadow: 1px 1px 4px;
+    border: 1px solid blue;
+}
+
+@media screen and (min-width:798px) {
+    .about-content{
+        max-width: 1300px;
+        flex-direction: row;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    .aboutitem{
+        width: 30%;
+    }
+}
+
