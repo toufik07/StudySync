@@ -361,3 +361,136 @@ body {
     }
 }
 
+.news{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    padding-bottom: 2rem;
+}
+
+.news-img{
+     width: 50%; 
+    height: 40vh;
+}
+.newsimg{
+    width: 100%;
+    height: 100%;
+}
+.news-text{
+    width: 45%;
+    background-color: var(--light-gray);
+    color: var(--text-color);
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   justify-content: center;
+   align-items: flex-start;
+   padding-left: 2.5rem;
+}
+.news-label{
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+.emailtext{
+    height: 32px;
+    width: 170px;
+}
+.sendbtn{
+    padding: 0.5rem;
+    width: 60px;
+    border-radius: 0.3rem;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+}
+::placeholder{
+    padding: 0.5rem;
+}
+.para{
+    padding-top: 2rem;
+    font-size: 0.8rem;
+}
+.para a{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:768px) {
+    .news-img{
+        display: none;
+    }
+    .news-text{
+        width: 100%;
+        padding-top: 1rem;
+    }
+}
+
+.footer-content{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 2.5fr repeat(4,1fr);
+}
+
+.footer-item1{
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+.footlogo-text{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.footlogo-img{
+    height: 25px;
+}
+.footlabel{
+    color: var(--gray);
+}
+.footer-images{
+    width: 250px;
+    height: 50px;
+    display: flex;
+    gap: 1rem;   
+}
+.footimg{
+    height: 40%;
+}
+
+.footer-item2,.footer-item3,.footer-item4,.footer-item5{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.footer-content a{
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+.footer-end{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer-right{
+    color: var(--gray);
+    font-size: 0.7rem;
+    padding: 1rem;
+}
+
+@media screen and (max-width:768px) {
+    .footer-content{
+        gap: 1rem;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:  repeat(3,1fr);
+    }
+}
+@media screen and (max-width:425px) {
+    .footer-content{
+        grid-template-columns:none ;
+        text-align: center;
+    }
+}
